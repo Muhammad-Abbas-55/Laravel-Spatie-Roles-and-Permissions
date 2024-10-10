@@ -80,8 +80,6 @@ class UserController extends Controller
 
 
 
-
-
     public function destroy (User $user)
     {
         if($user->hasRole('admin')){
