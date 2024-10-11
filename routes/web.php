@@ -80,5 +80,6 @@ Route::middleware(['auth','role:admin'])->name('admin.')->prefix('admin')->group
     
 require __DIR__.'/auth.php';
 
-Route::get('/quot', [QuotationController::class, 'index'])->name('quot')->middleware(['auth','role:admin']);
+// Route::get('/quot', [QuotationController::class, 'index'])->name('quot')->middleware(['auth','role:admin']);
+Route::get('/quot', [QuotationController::class, 'index'])->name('quot');
 
